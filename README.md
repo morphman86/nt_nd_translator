@@ -11,7 +11,7 @@ This project provides a translation system that converts between Neurotypical (N
 ## Prerequisites
 
 - Python 3.x
-- OpenAI account with a created API key [https://platform.openai.com/settings/organization/api-keys](API keys)
+- OpenAI account with a created API key [API keys](https://platform.openai.com/settings/organization/api-keys)
 - Added payment credentials and pre-pay at least $5 ($6 with tax) to your OpenAI account
 
 ### Dependencies
@@ -58,7 +58,7 @@ The current list of available and compatible engines is
 | gpt-3.5-turbo-16k-0613        | $3.00 / 1M tokens  | $4.00 / 1M tokens |
 | gpt-3.5-turbo-0301            | $1.50 / 1M tokens  | $2.00 / 1M tokens |
 
-If these become outdated, look up [https://platform.openai.com/docs/deprecations](the deprecation list) for the nearest equivalent model.
+If these become outdated, look up [the deprecation list](https://platform.openai.com/docs/deprecations) for the nearest equivalent model.
 
 ## Usage
 
