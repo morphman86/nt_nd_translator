@@ -36,11 +36,11 @@ TEMPERATURE = 0.5  # Controls the creativity of the translation (lower = more ri
 
 ## Usage
 
-Once everything is set up, you can run the script to translate phrases between NT and ND. Here's how to use the system:
+Once everything is set up, you can run the script to translate phrases between NT and ND. A `main.py` file is included with an example of how you can use this:
 
 ### Command-line Interface
 
-You can run the system from the command line and provide a phrase for translation:
+You can run the example system from the command line and provide a phrase for translation:
 
 ```bash
 python main.py "Your phrase here" --direction nt->nd
@@ -54,8 +54,17 @@ By default, the direction is set to `nt->nd`.
 
 ### Example
 
+#### Input:
+
 ```bash
-python main.py "I don't understand why you're upset." --direction nt->nd
+python main.py "It's just common sense." --direction nt->nd
+```
+
+#### Output:
+
+```bash
+Translation not cached, getting from external service using context NT->ND
+ND -> NT: It's something most people know without having to think about it.
 ```
 
 ## Cache
@@ -65,6 +74,12 @@ The application uses a cache file (`cache.json`) to store previously translated 
 ### Cache Location
 
 The cache will be stored in a file named `cache.json` in the same directory as the script. The file will automatically be created based on the user's queries.
+
+#### Cache format exanple
+
+```json
+{"It's just common sense": {"translation": "It's something most people know without having to think about it.", "timestamp": 1738762433.549149}
+```
 
 ### Permissions
 
