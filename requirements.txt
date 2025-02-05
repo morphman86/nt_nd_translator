@@ -1,0 +1,4 @@
+openai==0.27.0
+argparse==1.4.0  # Note: argparse is part of Python's standard library for Python >= 3.2, so it's optional to include here
+
+# pip install -r requirements.txt
